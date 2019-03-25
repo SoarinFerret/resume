@@ -55,6 +55,10 @@ resume_social_links:
   resume_medium_url:            "https://medium.com/@jglovier"
 resume_print_social_links:      true
 
+# Resume Print Button
+# uncomment to remove button
+resume_print_button:            "yes"
+
 # Design settings
 resume_theme:                   default
 
