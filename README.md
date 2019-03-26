@@ -1,19 +1,31 @@
-# Resume template
+# My Resume
 
-*A simple Jekyll + GitHub Pages powered resume template.*
-
-![img](images/screenshot.png)
+*A simple Jekyll + GitHub Pages powered resume template forked from https://github.com/jglovier/resume-template*
 
 ## Docs
 
 ### Running locally
 
+#### Using Docker
+
+On Linux:
+```bash
+docker run -t --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
+```
+
+On Windows (in PowerShell):
+```powershell
+docker run -t --rm -v "$($PWD.Path):/usr/src/app" -p "4000:4000" starefossen/github-pages
+```
+
+#### On your machine
+
 To test locally, run the following in your terminal:
 
 1. Clone repo locally
-1. `bundle install`
-2. `bundle exec jekyll serve`
-3. Open your browser to `localhost:4000`
+2. `bundle install`
+3. `bundle exec jekyll serve`
+4. Open your browser to `localhost:4000`
 
 ### Customizing
 
