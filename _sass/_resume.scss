@@ -200,6 +200,36 @@
   .resume-item-copy { margin: .75rem 0 0; }
 }
 
+.wrap{
+  .main-content {
+    float: right;
+    margin-left: 1em;
+    padding-left: 1em;
+  }
+  width: 100%;
+}
+
+// sidebar
+.floating {
+  border-style: solid;
+  border-color: #c7c7c7;
+  
+  h3 { 
+    @include sans_bold;
+  }
+
+  section { margin: 1em; }
+
+  table { width: 100%; }
+
+  tr { height: 4em; }
+
+  td {
+    width: 50%;
+    align-content: center;
+  }
+}
+
 // footer styles
 
 .page-footer {
@@ -256,5 +286,24 @@
         font-size: 11px;
       }
     }
+  }
+}
+
+// mobile
+@media screen and (max-width: 600px) {
+  .one-third{
+    width: 100%;
+  }
+
+  .two-thirds {
+    width: 100%;
+  }
+
+  .print-button {
+    display: none;
+  }
+
+  .floating {
+    border-style: none;
   }
 }
