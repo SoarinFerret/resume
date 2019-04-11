@@ -4,17 +4,26 @@
 #  4 - Very Good
 #  5 - Excellent
 #
+- name: "Hyper-V Solutions"
+  skilllevel: 4.5
 
-- software: "PowerShell"
-  skilllevel: 5
-
-- software: "Windows Server"
+- name: "FortiOS"
   skilllevel: 4
 
-- software: Linux
+- name: "PowerShell"
+  skilllevel: 4
+
+- name: "PRTG"
+  skilllevel: 4
+
+- name: "Windows Server"
+  skilllevel: 4
+
+- name: Linux
+  skilllevel: 3.5
+
+- name: Git
+  skilllevel: 3.5
+
+- name: Docker
   skilllevel: 3
-
-- software: Docker
-  skilllevel: 3
-
-
