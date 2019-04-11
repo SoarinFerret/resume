@@ -22,8 +22,8 @@
 - name: Linux
   skilllevel: 3.5
 
-- name: Git
+- name: Docker
   skilllevel: 3.5
 
-- name: Docker
-  skilllevel: 3
+- name: Git
+  skilllevel: 3.5
