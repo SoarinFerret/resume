@@ -10,12 +10,12 @@
 
 On Linux:
 ```bash
-docker run -t --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
+docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 ```
 
 On Windows (in PowerShell):
 ```powershell
-docker run -t --rm -v "$($PWD.Path):/usr/src/app" -p "4000:4000" starefossen/github-pages
+docker run -it --rm -v "$($PWD.Path):/usr/src/app" -p "4000:4000" starefossen/github-pages
 ```
 
 #### On your machine
