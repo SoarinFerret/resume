@@ -7,11 +7,11 @@
   duration: Oct., 2015 &mdash; Feb., 2016
   summary: 'Designed, implemented, and troubleshot complex server and network infrastructure for multiple locations while applying cybersecurity best practices. 
     <ul class="resume-item-list">
-      <li>Combination of PowerShell and Ansible to facilitate infrastructure change management</li>
+      <li>Used PowerShell and Ansible to facilitate infrastructure change management</li>
       <li>Managed and setup multiple standalone and clustered Hyper-V servers</li>
       <li>Setup network monitoring across 15 districts with over 5,000 sensors on PRTG and Grafana</li>
-      <li>Built SubHub - a centralized substitute teacher scheduling and billing platform using Django, MySQL, and Nginx utilizing containers</li>
-      <li>Designed Single Sign On applications integrated with ADFS</li>
+      <li>Built SubHub - a centralized substitute teacher scheduling and billing platform using Django, MySQL, and Nginx utilizing docker-compose as featured in the Fremont Tribune</li>
+      <li>Designed and implemented SAML SSO applications with ADFS</li>
     </ul>'
 
 # UNO
