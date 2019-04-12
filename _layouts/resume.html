@@ -7,7 +7,7 @@
 
     <!-- Print Button -->
     {% if site.resume_print_button == 'yes' %}
-    <div class="print-button no-print" onclick="window.print()">Print a Copy!</div>
+    <a href="/CodyErnesti-SystemsEngineer.pdf"><div class="print-button no-print">Download a Copy!</div></a>
     {% endif %}
 
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
@@ -160,6 +160,26 @@
 
           </section>
           <!-- end Recognition -->
+          {% endif %}
+
+          {% if site.resume_section_certification %}
+          <!-- begin Certifications -->
+          <section class="content-section">
+
+            <header class="section-header">
+              <h2>Certifications</h2>
+            </header>
+
+            {% for cert in site.data.certifications %}
+            <div class="resume-item">
+              <h3 class="resume-item-title" itemprop="award">{{ cert.name }}</h3>
+              <h4 class="resume-item-details">{{ cert.date }} &bull; {{ cert.details }}</h4>
+              <!--<p class="resume-item-copy">{{ recognition.summary }}</p>-->
+            </div>
+            {% endfor %}
+
+          </section>
+          <!-- end Certifications -->
           {% endif %}
 
           {% if site.resume_section_associations %}
