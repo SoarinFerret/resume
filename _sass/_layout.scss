@@ -24,18 +24,18 @@
 
 // Base class for every column (requires a column width from below)
 .column {
-  float: left;
+  //float: left;
   padding-right: $grid-gutter;
   padding-left: $grid-gutter;
 }
 
 // Column widths
 .one-third {
-  width: 33.333333%;
+  width: 32%;
 }
 
 .two-thirds {
-  width: 66.666667%;
+  width: 65%;
 }
 
 .one-fourth {

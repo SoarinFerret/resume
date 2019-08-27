@@ -159,6 +159,7 @@
 // resume content styles
 
 .content-section {
+  overflow: hidden;
   margin: 0 0 3rem;
 
   .resume-item { margin-bottom: 2rem; }
@@ -202,9 +203,13 @@
 
 .wrap{
   .main-content {
-    float: right;
-    margin-left: 1em;
-    padding-left: 1em;
+    //float: right;
+    //margin-left: 1em;
+    //padding-left: 1em;
+    ul {
+      overflow: hidden;
+    }
+    //display: inline-flexbox;
   }
   width: 100%;
 }
@@ -213,12 +218,16 @@
 .floating {
   border-style: solid;
   border-color: #c7c7c7;
+  float: left;
+  margin-right: 1em;
   
   h3 { 
     @include sans_bold;
   }
 
-  section { margin: 1em; }
+  section { margin: 1em;
+    margin-bottom: 2em;
+  }
 
   table { width: 100%; }
 
@@ -234,12 +243,14 @@
 
 .page-footer {
   border-top: 4px solid #c7c7c7;
-  padding-top: 1.5rem;
+  padding-top: .5rem;
   text-align: center;
   margin-bottom: 3rem;
+  //margin-top: -.5rem;
 
   .footer-line {
     margin: 0;
+    margin-bottom: -2rem;
     font-size: .875rem;
     color: #999;
 
@@ -269,7 +280,7 @@
     h2 { font-size: 1.2rem; line-height: 1.5rem; }
   }
   .content-section {
-    margin: 0 0 1rem;
+    margin: 0 0 .5rem;
     .resume-item { margin-bottom: 1rem; }
     .resume-item-title {
       font-size: 16px;
@@ -287,6 +298,7 @@
       }
     }
   }
+
 }
 
 // mobile
@@ -305,5 +317,10 @@
 
   .floating {
     border-style: none;
+    float: none;
+    .content-section{
+      margin: 0em;
+      margin-bottom: 3rem;
+    }
   }
 }

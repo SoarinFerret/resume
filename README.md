@@ -2,8 +2,6 @@
 
 *A simple Jekyll + GitHub Pages powered resume template forked from https://github.com/jglovier/resume-template*
 
-*I plan to add my feature additions upstream at some point, but if you'd like to simply fork my resume instead, thats fine too! Just don't copy my achievements :)*
-
 ## Docs
 
 ### Running locally

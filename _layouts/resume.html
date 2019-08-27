@@ -54,7 +54,44 @@
       </header>
 
       <div class="wrap">
-        <section class="content-section two-thirds main-content">
+        <!-- begin Floating Info -->
+        <div class="floating one-third sidebar">
+          
+            {% if site.resume_section_software %}
+            <section class="content-section">
+              <header class="section-header">
+                <h2>Software Skills</h3>
+              </header>
+              {% for software in site.data.software %}
+                <p>{{ software.name }}</p>
+                <div class="w3-light-grey">
+                  <div class="w3-grey" style="height:5px; width:{{ software.skilllevel | times:20 }}%"></div>
+                </div> 
+              {% endfor %}
+            </section>
+            {% endif %}
+  
+            {% if site.resume_print_social_links %}
+            <!-- begin Print Social Links -->
+            <section class="content-section print-only">
+  
+              <header class="section-header">
+                <h2>Social Links</h2>
+              </header>
+  
+              <div class="resume-item">
+              {% include print-social-links.html %}
+              </div>
+  
+            </section>
+            <!-- end Print Social Links -->
+            {% endif %}
+  
+        </div>
+        <!-- end Floating Info -->
+
+
+        <section class="main-content">
           {% if site.resume_section_experience %}
           <!-- begin Experience -->
           <section class="content-section">
@@ -86,17 +123,14 @@
             {% for education in site.data.education %}
             <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
               <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
-              <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
-              <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
+              <h4 class="resume-item-details" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
               <p class="resume-item-copy" itemprop="description">
                 <ul class="resume-item-list">
                   {% for award in education.awards %}
                   <li>{{ award.award }}</li>
                   {% endfor %}
-                </ul></h5>
-
-
-              <p class="resume-item-copy">{{ education.summary }}</p>
+                </ul>
+              </p>
             </div>
             {% endfor %}
           </section>
@@ -182,6 +216,26 @@
           <!-- end Certifications -->
           {% endif %}
 
+          {% if site.resume_section_interests %}
+          <!-- begin Interests -->
+          <section class="content-section">
+
+            <header class="section-header">
+              <h2>Outside Interests</h2>
+            </header>
+
+            <div class="resume-item">
+              <ul class="resume-item-list">
+                {% for interest in site.data.interests %}
+                <li>{{ interest.description }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+
+          </section>
+          <!-- end Interests -->
+          {% endif %}
+
           {% if site.resume_section_associations %}
           <!-- begin Associations -->
           <section class="content-section">
@@ -224,74 +278,9 @@
 
         </section>
 
-        <!-- begin Floating Info -->
-        <div class="floating one-third right-sidebar">
-          {% if site.resume_section_software %}
-          <section class="content-section">
-            <header class="section-header">
-              <h2>Software Skills</h3>
-            </header>
-            <table>
-              {% for software in site.data.software %}
-              <tr>
-                <td>{{ software.name }}</td>
-                <td>
-                  <div class="circle-ratings-css">
-                    <div class="circle-ratings-css-top" style="width: {{ software.skilllevel | times:22 }}%">
-                      <span>⬤</span><span>⬤</span><span>⬤</span><span>⬤</span><span>⬤</span>
-                    </div>
-                    <div class="circle-ratings-css-bottom">
-                      <span>⬤</span><span>⬤</span><span>⬤</span><span>⬤</span><span>⬤</span>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              {% endfor %}
-            </table>
-          </section>
-          {% endif %}
-
-          {% if site.resume_print_social_links %}
-          <!-- begin Print Social Links -->
-          <section class="content-section print-only">
-
-            <header class="section-header">
-              <h2>Social Links</h2>
-            </header>
-
-            <div class="resume-item">
-            {% include print-social-links.html %}
-            </div>
-
-          </section>
-          <!-- end Print Social Links -->
-          {% endif %}
-
-        </div>
-        <!-- end Floating Info -->
       </div>
-
     </div>
     <div class="wrapper">
-    {% if site.resume_section_interests %}
-    <!-- begin Interests -->
-    <section class="content-section">
-
-      <header class="section-header">
-        <h2>Outside Interests</h2>
-      </header>
-
-      <div class="resume-item">
-        <ul class="resume-item-list">
-          {% for interest in site.data.interests %}
-          <li>{{ interest.description }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-
-    </section>
-    <!-- end Interests -->
-    {% endif %}
 
     <footer class="page-footer">
       <p class="footer-line no-print">Hosted on <a href="{{ site.resume_social_links.resume_github_url }}/resume">GitHub</a>!</p>
