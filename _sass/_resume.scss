@@ -50,6 +50,7 @@
   .title-bar {
     @include section_border;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: .4rem 0;
     @include clearfix;
 
@@ -70,6 +71,7 @@
   }
 
   .executive-summary {
+    p {margin-top: 0em;}
     @include media_larger_than_mobile { font-size: 1.125rem; }
   }
 }
@@ -162,7 +164,7 @@
   overflow: hidden;
   margin: 0 0 1.5rem;
 
-  .resume-item { margin-bottom: 2rem; }
+  .resume-item { margin-bottom: 1rem; }
 
   .resume-item-title {
     @include sans_bold;
@@ -226,7 +228,6 @@
   }
 
   section { margin: 1em;
-    margin-bottom: 2em;
   }
 
   table { width: 100%; }
@@ -270,8 +271,12 @@
   .page-header { padding: 1rem 0 .2rem;
     .header-name {
       @include sans_bold;
-      font-size: 2rem;
+      font-size: 3rem;
       margin: 0 0 .2rem;
+      text-align: left;
+    }
+    .header-contact-info {
+      text-align: left;
     }
   }
   .section-header {

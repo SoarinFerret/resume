@@ -5,13 +5,16 @@
   <div class=test style="display: inline-block; width:10em">Network Technician</div> &bull; Mar., 2016 &mdash; June, 2018<br>
   <div class=test style="display: inline-block; width:10em">Technology Intern</div>'
   duration: Oct., 2015 &mdash; Feb., 2016
-  summary: 'Designed, implemented, and troubleshot complex server and network infrastructure for multiple locations while applying cybersecurity best practices. 
+  summary: 'Designed, implemented, maintained and decommissioned complex server and network infrastructure for multiple locations while applying cybersecurity best practices. 
     <ul class="resume-item-list">
-      <li>Used PowerShell and Ansible to facilitate infrastructure change management</li>
-      <li>Managed and setup multiple standalone and clustered Hyper-V servers</li>
-      <li>Setup network monitoring across 15 districts with over 5,000 sensors on PRTG and Grafana</li>
-      <li>Built SubHub - a centralized substitute teacher scheduling and billing platform using Django, MySQL, and Nginx utilizing docker-compose as featured in the Fremont Tribune</li>
+      <li>Use PowerShell, Ansible, and Rundeck to facilitate infrastructure change management</li>
+      <li>Manage and setup multiple standalone and clustered Hyper-V servers</li>
+      <li>Build, setup, and maintain multiple container-based services</li>
+      <li>Setup network and service monitoring across 15 districts with over 7,000 sensors on PRTG and Grafana</li>
+      <li>Built SubHub - a centralized substitute teacher scheduling and billing platform using Django, PostgresSQL, and Nginx utilizing docker-compose. Featured in the Fremont Tribune</li>
       <li>Designed and implemented SAML SSO applications with ADFS</li>
+      <li>Implemented multi-vlan wired and wireless networks with RADIUS </li>
+      <li>Utilize Fortigates for Web Filtering, App Control, IDS and IPS</li>
     </ul>'
 
 # UNO
