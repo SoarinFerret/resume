@@ -1,3 +1,20 @@
-- name: Microsoft Certified Professional
-  details: "70-741: Networking with Windows Server 2016<br><br>Sept. 2017 &bull; 70-740: Installation, Storage, and Compute with Windows Server 2016"
-  date: "Aug. 2018"
+#- name: Microsoft Certified Solutions Associate - Windows Server 2016
+#  details: "70-742: Identity with Windows Server 2016<br><br>Aug. 2018 &bull; 70-741: Networking with Windows Server 2016</br><br>Sept. 2017 &bull; 70-740: Installation, Storage, and Compute with Windows Server 2016"
+#  date: "Sept. 2019"
+
+- name: Microsoft Certified Solutions Associate
+  area: Windows Server 2016
+  date: "2019"
+  acclaimbadgeURL: https://images.youracclaim.com/images/85d8fffd-19fa-4191-b51d-c090541980ee/MCSA-Windows-Server-2016-2019.png
+  acclaimPublicURL: https://www.youracclaim.com/badges/1296be10-7dfd-455f-acf2-06c4cbe218d7/public_url
+  subcerts:
+    - name: "70-742"
+      area: Identity with Windows Server 2016
+      date: Sept. 2019
+    - name: "70-741"
+      area: Networking with Windows Server 2016
+      date: Aug. 2018
+    - name: "70-740"
+      area: Installation, Storage, and Compute with Windows Server 2016
+      date: Sept. 2017
+    
