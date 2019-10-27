@@ -4,26 +4,49 @@
 #  4 - Very Good
 #  5 - Excellent
 #
-- name: "Hyper-V Solutions"
+- name: "Virtualization Technologies"
   skilllevel: 4.5
+  technologies: 
+    - Hyper-V
+    - KVM
 
-- name: "FortiOS"
+- name: "Networking"
   skilllevel: 4
+  technologies:
+    - Fortinet
+    - Cisco
 
-- name: "PowerShell"
+- name: "Scripting"
   skilllevel: 4
+  technologies:
+    - PowerShell
+    - Bash
+    - Python
 
-- name: "PRTG"
+- name: "Monitoring / Logging Solutions"
   skilllevel: 4
+  technologies:
+    - PRTG
+    - Prometheus
+    - Graylog
+    - ELK Stack
 
-- name: "Windows Server"
+#- name: "Container Technologies"
+#  skilllevel: 3.5
+#  technologies:
+#    - Docker
+#    - Rancher
+#    - Kubernetes
+#    - Swarm
+
+- name: "Operating Systems"
   skilllevel: 4
+  technologies:
+    - Ubuntu
+    - CentOS
+    - Windows Server
 
-- name: Linux
-  skilllevel: 3.5
 
-- name: Docker
-  skilllevel: 3.5
 
-- name: Git
-  skilllevel: 3.5
+#- name: Git
+#  skilllevel: 3.5
